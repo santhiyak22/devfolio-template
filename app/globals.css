@@ -1,0 +1,206 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* DevFolio light theme */
+html[data-theme="light"] #home {
+  background: #f8fafc !important;
+  color: #111827 !important;
+}
+
+html[data-theme="light"] #home header {
+  background: rgb(248 250 252 / 90%) !important;
+  border-color: #e2e8f0 !important;
+}
+
+html[data-theme="light"] #home section {
+  border-color: #e2e8f0;
+}
+
+html[data-theme="light"] #home .text-white,
+html[data-theme="light"] #home .text-zinc-200,
+html[data-theme="light"] #home .text-zinc-300 {
+  color: #1e293b !important;
+}
+
+html[data-theme="light"] #home .text-zinc-400,
+html[data-theme="light"] #home .text-zinc-500 {
+  color: #64748b !important;
+}
+
+html[data-theme="light"] #home .border-white\/10,
+html[data-theme="light"] #home .border-white\/15,
+html[data-theme="light"] #home .border-white\/\[0\.07\],
+html[data-theme="light"] #home .border-white\/\[0\.08\],
+html[data-theme="light"] #home .border-white\/\[0\.09\] {
+  border-color: #e2e8f0 !important;
+}
+
+html[data-theme="light"] #home .bg-white\/\[0\.018\],
+html[data-theme="light"] #home .bg-white\/\[0\.025\],
+html[data-theme="light"] #home .bg-white\/\[0\.04\] {
+  background-color: #f1f5f9 !important;
+}
+
+html[data-theme="light"] #home .bg-\[\#10101b\],
+html[data-theme="light"] #home .bg-\[\#10111c\]\/95 {
+  background-color: #ffffff !important;
+}
+
+html[data-theme="light"] #home .bg-\[\#10111a\] {
+  background-color: #ffffff !important;
+}
+
+html[data-theme="light"] #home a:hover {
+  color: #7c3aed;
+}
+
+/* =========================================
+   DEVFOLIO — LIGHT THEME OVERRIDES
+   Add this at the END of globals.css
+========================================= */
+
+html[data-theme="light"] body {
+  background: #f8fafc !important;
+  color: #0f172a !important;
+}
+
+html[data-theme="light"] #home {
+  background: #f8fafc !important;
+  color: #0f172a !important;
+  color-scheme: light;
+}
+
+/* Navigation */
+html[data-theme="light"] #home header {
+  background: rgb(248 250 252 / 92%) !important;
+  border-color: #e2e8f0 !important;
+}
+
+html[data-theme="light"] #home header a {
+  color: #334155;
+}
+
+html[data-theme="light"] #home header a:hover {
+  color: #7c3aed !important;
+}
+
+/* Main text colors */
+html[data-theme="light"] #home .text-white,
+html[data-theme="light"] #home .text-zinc-200,
+html[data-theme="light"] #home .text-zinc-300 {
+  color: #1e293b !important;
+}
+
+html[data-theme="light"] #home .text-zinc-400 {
+  color: #475569 !important;
+}
+
+html[data-theme="light"] #home .text-zinc-500 {
+  color: #64748b !important;
+}
+
+html[data-theme="light"] #home .text-zinc-700 {
+  color: #475569 !important;
+}
+
+/* Section backgrounds */
+html[data-theme="light"] #home section.bg-white\/\[0\.018\],
+html[data-theme="light"] #home .bg-white\/\[0\.018\],
+html[data-theme="light"] #home .bg-white\/\[0\.025\],
+html[data-theme="light"] #home .bg-white\/\[0\.04\] {
+  background-color: #f1f5f9 !important;
+}
+
+/* Profile card, contact card, floating card */
+html[data-theme="light"] #home .bg-\[\#10101b\],
+html[data-theme="light"] #home .bg-\[\#10111c\]\/95,
+html[data-theme="light"] #home .bg-\[\#10111a\],
+html[data-theme="light"] #home .bg-\[\#181827\],
+html[data-theme="light"] #home .bg-\[\#11121c\]\/85 {
+  background-color: #ffffff !important;
+}
+
+/* Borders */
+html[data-theme="light"] #home .border-white\/10,
+html[data-theme="light"] #home .border-white\/15,
+html[data-theme="light"] #home .border-white\/20,
+html[data-theme="light"] #home .border-white\/\[0\.07\],
+html[data-theme="light"] #home .border-white\/\[0\.08\],
+html[data-theme="light"] #home .border-white\/\[0\.09\] {
+  border-color: #e2e8f0 !important;
+}
+
+/* Subtle UI blocks and progress bar backgrounds */
+html[data-theme="light"] #home .bg-white\/10,
+html[data-theme="light"] #home .bg-white\/15,
+html[data-theme="light"] #home .bg-white\/\[0\.08\] {
+  background-color: #e2e8f0 !important;
+}
+
+/* Light theme grid */
+html[data-theme="light"] #home section [class*="linear-gradient(to_right"] {
+  opacity: 0.35;
+}
+
+/* Theme toggle button */
+html[data-theme="light"] #home header button {
+  color: #334155 !important;
+  border-color: #cbd5e1 !important;
+}
+
+/* Keep violet accents readable */
+html[data-theme="light"] #home .text-violet-300,
+html[data-theme="light"] #home .text-violet-400 {
+  color: #7c3aed !important;
+}
+
+/* Preserve emerald availability badge */
+html[data-theme="light"] #home .text-emerald-300 {
+  color: #047857 !important;
+}
+
+/* Buttons */
+html[data-theme="light"] #home a.bg-violet-500 {
+  color: #ffffff !important;
+}
+
+html[data-theme="light"] #home a.bg-white {
+  background-color: #7c3aed !important;
+  color: #ffffff !important;
+}
+
+/* Smooth theme transition */
+html[data-theme="light"] #home,
+html[data-theme="light"] #home header,
+html[data-theme="light"] #home article,
+html[data-theme="light"] #home section {
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease,
+    border-color 0.25s ease;
+}
